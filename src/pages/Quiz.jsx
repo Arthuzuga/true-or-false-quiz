@@ -46,6 +46,7 @@ const Loading = styled.div`
 const Quiz = () => {
     const history = useHistory()
     const [isLoading, setLoading] = useState(true)
+    const [hasError, setError] = useState(false)
     const [questions, setQuestions] = useState([])
     const [questionIndex, setQuestionIndex] = useState(0)
     const [answers, setAnswers] = useState([])
@@ -53,7 +54,7 @@ const Quiz = () => {
     useEffect(() => {
         getQuestions().then(res => {
             setQuestions(res.results)
-        }).finally(() => setLoading(false))
+        }).catch(() => setError(true)).finally(() => setLoading(false))
     },[])
 
     useEffect(() => {
@@ -93,6 +94,17 @@ const Quiz = () => {
                 <Loading>
                     Loading...
                 </Loading>
+            </>
+        )
+    }
+    if (hasError) {
+        return (
+            <>
+                <Loading>
+                    Unfortunately, we could not load the questions.
+                    Please, try again later
+                </Loading>
+                <Button label="BACK TO HOME" onClick={() => history.push('/')}/>
             </>
         )
     }
