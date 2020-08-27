@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
 import { Title, Button } from '../components'
 import getQuestions from '../services/api'
 import decodeText from '../helpers/functions'
+import { AnswersContext } from '../contexts/answerContext'
 
 const QuizBoxContainer = styled.div`
     width: 18rem;
@@ -50,6 +51,7 @@ const Quiz = () => {
     const [questions, setQuestions] = useState([])
     const [questionIndex, setQuestionIndex] = useState(0)
     const [answers, setAnswers] = useState([])
+    const answersContext = useContext(AnswersContext)
 
     useEffect(() => {
         getQuestions().then(res => {
@@ -60,10 +62,10 @@ const Quiz = () => {
     useEffect(() => {
         if (answers.length === 10) {
             setLoading(true)
-            localStorage.setItem('answers', JSON.stringify(answers))
+            answersContext.push(...answers)
             setTimeout(() => history.push('/results'), 800)
         }
-    },[answers, history])
+    },[answers, history, answersContext])
 
     const changeQuestion = () => {
         const newIndex = questionIndex +1;
