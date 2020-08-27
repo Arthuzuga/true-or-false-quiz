@@ -1,0 +1,76 @@
+{
+  "questions": {
+    "response_code": 0,
+    "results": [{
+      "category": "Vehicles",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "In 1993 Swedish car manufacturer Saab experimented with replacing the steering wheel with a joystick in a Saab 9000.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    }, {
+      "category": "History",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "Joseph Stalin&#039;s real name was Ioseb Bessarionis dze Dzugashvili.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    }, {
+      "category": "Entertainment: Comics",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "In the comic book &quot;Archie&quot;, Betty is friends with Veronica because she is rich.",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"]
+    }, {
+      "category": "Science: Mathematics",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "The binary number &quot;101001101&quot; is equivalent to the Decimal number &quot;334&quot;",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"]
+    }, {
+      "category": "Entertainment: Video Games",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "TF2: Sentry rocket damage falloff is calculated based on the distance between the sentry and the enemy, not the engineer and the enemy",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"]
+    }, {
+      "category": "Entertainment: Film",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "&quot;Cube&quot;, &quot;Cube 2: Hypercube&quot; and &quot;Cube Zero&quot; were directed by the same person.",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"]
+    }, {
+      "category": "Entertainment: Books",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "Harry Potter was born on July 31st, 1980.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    }, {
+      "category": "Entertainment: Board Games",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "The board game Go has more possible legal positions than the number of atoms in the visible universe.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    }, {
+      "category": "Science: Mathematics",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "In Topology, the complement of an open set is a closed set.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    }, {
+      "category": "Science: Mathematics",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "L&#039;H&ocirc;pital was the mathematician who created the homonymous rule that uses derivatives to evaluate limits with indeterminations.",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"]
+    }]
+  }
+}
